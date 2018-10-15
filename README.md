@@ -16,16 +16,16 @@
 - Player 1 is requested to make a move first.
 - As soon as Player 1 makes the move, updates in the board state will be made and Player 2 will receive the updated board state.
 - When the game is over:
-a. Player who won should get the **Win** message
-b. Player who lost should get the **Lose** message
-c. In case of draw, both should get **Draw** message.
-d. Both should be prompted with **Play another game?** message. If both agrees, fresh game should start else both the clients disconnect and close.
-- Game Parallelization
-a. The server should be able to run multiple games in parallel.
-b. If X clients connect to server, where X is even, X/2 games should run in parallel.
-c. The players will play in the order they connect. If P1 and P2 connect, they play a game together. While the game for P1 and P2 is going on, if P3 and P4 connects, their game starts fresh irrespective of the first game.
-- Timer
-a. For each move, a 10 seconds timer should be started. If the player is not able to make a move in 10 seconds, she will lose the game and prompt for another game should be displayed.
+    - Player who won should get the **Win** message
+    - Player who lost should get the **Lose** message
+    - In case of draw, both should get **Draw** message.
+    - Both should be prompted with **Play another game?** message. If both agrees, fresh game should start else both the clients disconnect and close.
+* **Game Parallelization**
+    * The server should be able to run multiple games in parallel.
+    * If X clients connect to server, where X is even, X/2 games should run in parallel.
+    * The players will play in the order they connect. If P1 and P2 connect, they play a game together. While the game for P1 and P2 is going on, if P3 and P4 connects, their game starts fresh irrespective of the first game.
+- **Timer**
+    * For each move, a 10 seconds timer should be started. If the player is not able to make a move in 10 seconds, she will lose the game and prompt for another game should be displayed.
 
 ### Open one terminal. Run :
     rmic TicTacToeImpl
